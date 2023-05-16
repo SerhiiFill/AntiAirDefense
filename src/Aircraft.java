@@ -14,30 +14,59 @@ public class Aircraft {
     public Aircraft()   // генерируем случайные значения для полей класса при вызове конструктора
     {
 
-        int i1 = random.nextInt(10000);
-        speed=i1;
-        int i2 = random.nextInt(50);
-        alt=i2;
-        int s2 = random.nextInt(100);
-        range=s2;
+      //  int i1 = random.nextInt(10000);
+      //  speed=i1;
+        speed = 300;
+
+        if (speed>=3501){
+            int i2 = random.nextInt(39);
+            alt=i2+21;
+            }  else if (speed>=900 && speed<=3500 ){
+            int i2 = random.nextInt(17);
+            alt=i2+3;
+            } else if (speed>=90 && speed<=180){
+                     int i2 = random.nextInt(2);
+            alt=i2+1;
+            }
+                            // здесь сделано так, чтобы не генерировалась высота равная 0 км
+        int s2 = random.nextInt(90);
+        range=s2+10;                              // здесь сделано так, чтобы не генерировалась дистанция меньше 10км
         int a2 = random.nextInt(360);
         azimuth =a2;
 
-
     }
-        public void pause (){  // будет использоваться как пауза
+
+
+    // метод, описывающий логику определения типа цели
+    public void targetSelector (){
+
+        if (speed>=900 && speed<=3500 && alt>3 && alt<=19) {
+            System.out.println("Ціль - Літак");
+            System.out.println(speed);
+               }
+        else if (speed>=90 && speed<=180 && alt>1 && alt<=3) {
+
+            System.out.println("Ціль БПЛА");
+
+                }
+        else {
+            System.out.println("Ціль - баллістична ракета!");
+             }
+        }
+    // будет использоваться как пауза
+    public void pause (){
         try     {
             Thread.sleep(500);
-              }
+        }
         catch (InterruptedException e) {
 
             throw new RuntimeException(e);
         }
 
-
     }
 
-    public void displayWarning() {          // вывод тревожных сообщений
+    // вывод тревожных сообщений
+    public void displayWarning() {
 
         System.out.println("УВАГА! ПОВІТРЯНА ЦІЛЬ!");
         pause();
@@ -53,20 +82,5 @@ public class Aircraft {
         System.out.println("Дистанція  : " + range + "    КМ");
         System.out.println("Азімут     : "   + alt + "    ГРАД");
     }
-
-    public int targetSelector ()   // метод, описывающий логику определения типа цели
-        {
-        if (speed>=0 && speed<=3500) {
-            System.out.println("Test1");
-            System.out.println(speed);
-            type =1;
-
-        }
-        else {
-            System.out.println("Test2");
-            System.out.println(speed);}
-           // type=2;
-        return type;
-        }
 
 }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Первая заливка">
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="16 05 14:00 Генерация случайных значений полей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/IRadar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/IRadar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,8 @@
       <workItem from="1684043002285" duration="2919000" />
       <workItem from="1684160935270" duration="4795000" />
       <workItem from="1684172027826" duration="2456000" />
-      <workItem from="1684216346247" duration="10967000" />
+      <workItem from="1684216346247" duration="12647000" />
+      <workItem from="1684256072254" duration="3731000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -76,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684168847324</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="16 05 14:00 Генерация случайных значений полей">
+      <created>1684234123300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684234123300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Первая заливка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Первая заливка" />
+    <MESSAGE value="16 05 14:00 Генерация случайных значений полей" />
+    <option name="LAST_COMMIT_MESSAGE" value="16 05 14:00 Генерация случайных значений полей" />
   </component>
 </project>
