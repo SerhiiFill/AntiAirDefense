@@ -2,10 +2,13 @@ package Service;
 
 public interface IRadar {
 
-    public void speed();
-    public void alt ();
-    public void azimuth();
-    public void range();
+    void speed();
+    void alt ();
+    void azimuth();
+    void range();
 
-
+    default void print()
+    {
+        System.out.println("Radar");
+    }
 }

@@ -5,18 +5,10 @@ public class AntiAirDefence {
 
 
         Aircraft aircraft = new Aircraft();
-        aircraft.randomSpeed();
 
+        aircraft.displayWarning();
 
-        System.out.println(aircraft.speed);
-
-
+        aircraft.targetSelector();
     }
 
-
-
-    public int Selector (int i) {
-
-        return i;
-    }
 }

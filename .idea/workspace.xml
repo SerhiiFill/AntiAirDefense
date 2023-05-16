@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AntiAirDefense.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/IRadar.java" afterDir="false" />
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Первая заливка">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/IRadar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/IRadar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +65,18 @@
       <workItem from="1683985348782" duration="7804000" />
       <workItem from="1684014574811" duration="3984000" />
       <workItem from="1684043002285" duration="2919000" />
-      <workItem from="1684160935270" duration="3524000" />
+      <workItem from="1684160935270" duration="4795000" />
+      <workItem from="1684172027826" duration="2456000" />
+      <workItem from="1684216346247" duration="10967000" />
     </task>
+    <task id="LOCAL-00001" summary="Первая заливка">
+      <created>1684168847324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684168847324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Первая заливка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первая заливка" />
   </component>
 </project>
