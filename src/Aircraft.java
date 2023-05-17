@@ -7,27 +7,41 @@ public class Aircraft {
     public int alt;
     public int range;
     public int azimuth;
-    public int type;
+    boolean aircraft;
+    boolean helix;
+    boolean wingm;
+    boolean bpla;
+    boolean mbr;
+
     Random random = new Random();
     Scanner scanner= new Scanner(System.in);
 
-    public Aircraft()   // генерируем случайные значения для полей класса при вызове конструктора
+    public Aircraft()   // генерируем и иниализируем случайные значения для полей класса при вызове конструктора
     {
+       int i1 = random.nextInt(10000);
+       speed=i1+90;
 
-      //  int i1 = random.nextInt(10000);
-      //  speed=i1;
-        speed = 300;
+       // С єтого места генерируется высота в зависимости от диапазона скорости
 
         if (speed>=3501){
             int i2 = random.nextInt(39);
             alt=i2+21;
-            }  else if (speed>=900 && speed<=3500 ){
+
+            }  else if (speed>=900 && speed<=3500 ){ // Высота и скорость  характерная самолетам
             int i2 = random.nextInt(17);
             alt=i2+3;
-            } else if (speed>=90 && speed<=180){
-                     int i2 = random.nextInt(2);
+
+            }  else if (speed>=181 && speed<=280){     // Высота и скорость  характерная вертолетам
+            int i2 = random.nextInt(4);
             alt=i2+1;
-            }
+
+            }  else if (speed>=281 && speed<=899){   // Высота и скорость  характерная КР
+            alt=1;
+
+            }  else if (speed>=90 && speed<=180) {   // Высота и скорость  характерная БПЛА
+            int i2 = random.nextInt(3);
+            alt = i2 + 1;
+             }
                             // здесь сделано так, чтобы не генерировалась высота равная 0 км
         int s2 = random.nextInt(90);
         range=s2+10;                              // здесь сделано так, чтобы не генерировалась дистанция меньше 10км
@@ -35,22 +49,28 @@ public class Aircraft {
         azimuth =a2;
 
     }
-
-
     // метод, описывающий логику определения типа цели
-    public void targetSelector (){
+    public void printTargetSelector (){
 
-        if (speed>=900 && speed<=3500 && alt>3 && alt<=19) {
-            System.out.println("Ціль - Літак");
-            System.out.println(speed);
-               }
-        else if (speed>=90 && speed<=180 && alt>1 && alt<=3) {
-
+        if (speed>=900 && speed<=3500) {
+            System.out.println("Ціль - ЛІТАК");
+            aircraft = true;
+            }
+        else if (speed>=181 && speed<=280) {
+            System.out.println("Ціль - ГЕЛІКОПТЕР");
+            helix = true;
+            }
+        else if (speed>=90 && speed<=180){
             System.out.println("Ціль БПЛА");
-
-                }
+            bpla = true;
+        }
+        else if (speed>=281 && speed<=899){
+            System.out.println("Ціль - КРИЛАТА РАКЕТА");
+            wingm = true;
+        }
         else {
-            System.out.println("Ціль - баллістична ракета!");
+            System.out.println("Ціль - БАЛЛІСТИЧНА РАКЕТА!");
+            mbr = true;
              }
         }
     // будет использоваться как пауза
@@ -73,7 +93,6 @@ public class Aircraft {
         System.out.println("......ЙДЕ ОБЧИСЛЕННЯ ДАННИХ.......");
         pause();
         pause();
-        //   System.out.println("......ЙДЕ ОБЧИСЛЕННЯ ДАННИХ.......");
         System.out.println();
         pause();
         pause();
