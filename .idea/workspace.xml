@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей">
-      <change afterPath="$PROJECT_DIR$/src/SAM.java" afterDir="false" />
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей&#10;&#10;17.05  06:00 Добавлено новый класс SAM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Readmi" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,13 @@
       <workItem from="1684256072254" duration="3731000" />
       <workItem from="1684261608949" duration="351000" />
       <workItem from="1684270158408" duration="3575000" />
-      <workItem from="1684291283044" duration="304000" />
+      <workItem from="1684291283044" duration="1283000" />
+      <workItem from="1684303194320" duration="2128000" />
+      <workItem from="1684319938522" duration="1143000" />
+      <workItem from="1684507560094" duration="345000" />
+      <workItem from="1684583597308" duration="1632000" />
+      <workItem from="1684673152933" duration="1447000" />
+      <workItem from="1684722866850" duration="1067000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -95,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684261694398</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей&#10;&#10;17.05  06:00 Добавлено новый класс SAM">
+      <created>1684291739055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684291739055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +129,7 @@
     <MESSAGE value="Первая заливка" />
     <MESSAGE value="16 05 14:00 Генерация случайных значений полей" />
     <MESSAGE value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей" />
-    <option name="LAST_COMMIT_MESSAGE" value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей" />
+    <MESSAGE value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей&#10;&#10;17.05  06:00 Добавлено новый класс SAM" />
+    <option name="LAST_COMMIT_MESSAGE" value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей&#10;&#10;17.05  06:00 Добавлено новый класс SAM" />
   </component>
 </project>
