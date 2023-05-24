@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="исправлено модифиакторы доступа&#10;добавлены else&#10;начал писать диалог выбора цели">
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Работа с методами printTargetType&#10;и targetSelector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Readmi" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +80,8 @@
       <workItem from="1684673152933" duration="1447000" />
       <workItem from="1684722866850" duration="1456000" />
       <workItem from="1684763227330" duration="58000" />
-      <workItem from="1684923177906" duration="2867000" />
+      <workItem from="1684923177906" duration="4803000" />
+      <workItem from="1684943826504" duration="7235000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684724282578</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Работа с методами printTargetType&#10;и targetSelector">
+      <created>1684926511088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684926511088</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +148,7 @@
     <MESSAGE value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей" />
     <MESSAGE value="16 05 14:00 Генерация случайных значений полей&#10;&#10;16.05 21:30 Добавляю логику генерации полей и селекции целей&#10;&#10;17.05  06:00 Добавлено новый класс SAM" />
     <MESSAGE value="исправлено модифиакторы доступа&#10;добавлены else&#10;начал писать диалог выбора цели" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправлено модифиакторы доступа&#10;добавлены else&#10;начал писать диалог выбора цели" />
+    <MESSAGE value="Работа с методами printTargetType&#10;и targetSelector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с методами printTargetType&#10;и targetSelector" />
   </component>
 </project>

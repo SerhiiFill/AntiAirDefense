@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,12 +20,12 @@ public class Aircraft {
 
     public Aircraft()   // генерируем и иниализируем случайные значения для полей класса при вызове конструктора
     {
-        // int i1 = random.nextInt(10000);
-       //speed=i1+90;
-        speed=940;
+          int i1 = random.nextInt(10000);
+          speed=i1+90;
+     //   speed=940;
        // С этого места генерируется высота в зависимости от диапазона скорости
 
-        if (speed>=3501)
+          if (speed>=3501)
             {
             int i2 = random.nextInt(39);
             alt=i2+21;
@@ -55,40 +57,33 @@ public class Aircraft {
         {
         if (speed>=900 && speed<=3500)
             {
-                                             // здесь писать диалог выбора при помощи сканера
+                                             // здесь диалог выбора цели
             System.out.println("Ціль - ЛІТАК");
-                System.out.println("Підтверджуєте тип цілі???  Y/N?");
-                String select = scanner.nextLine();
-                switch (select){
-                    case "N":
-                        System.out.println("Ручний вибір цілі: ");
-                        targetSelector();
-                    case "n":
-                        System.out.println("Ручний вибір цілі: ");
-                        targetSelector();
-                    default:
-                        System.out.println("ОК!!  ПОВІТРЯНА ЦІЛЬ - ЛІТАК!");
-                        aircraft=true;
-                }
+            aircraft=true;
+            confirmSelect();
             }
         else if (speed>=181 && speed<=280)
             {
             System.out.println("Ціль - ГЕЛІКОПТЕР");
             helix = true;
+            confirmSelect();
             }
         else if (speed>=90 && speed<=180)
             {
             System.out.println("Ціль БПЛА");
             bpla = true;
+            confirmSelect();
             }
         else if (speed>=281 && speed<=899)
              {
             System.out.println("Ціль - КРИЛАТА РАКЕТА");
             wingm = true;
+            confirmSelect();
              }
         else {
             System.out.println("Ціль - БАЛЛІСТИЧНА РАКЕТА!");
             mbr = true;
+            confirmSelect();
              }
         }
     //         Метод будет использоваться как пауза
@@ -103,6 +98,21 @@ public class Aircraft {
         }
     }
 
+    // Создание хешмэпа в котором зафиксированы поля класса
+    public void airMonitorData(){
+
+        Map<String, Integer> airData=new HashMap<>();
+        airData.put("Швидкість:",speed);
+        airData.put("Висота",alt);
+        airData.put("Дистанція",range);
+        airData.put("Азимут",azimuth);
+
+        for (Map.Entry<String,Integer> item: airData.entrySet())
+        {
+            System.out.println(item.getKey() + " " + item.getValue());
+        }
+    }
+
        // вывод тревожных сообщений
     public void displayWarning()
     {
@@ -110,16 +120,14 @@ public class Aircraft {
         pause();
         System.out.println("......ЙДЕ ОБЧИСЛЕННЯ ДАННИХ.......");
         pause();
-        pause();
         System.out.println();
-        pause();
         pause();
         System.out.println("Шшвидкість : " + speed + "  КМ/год");
         System.out.println("Висота     : "   + alt + "    КМ");
         System.out.println("Дистанція  : " + range + "    КМ");
-        System.out.println("Азімут     : "   + alt + "    ГРАД");
+        System.out.println("Азімут     : " + azimuth + "    ГРАД");
     }
-    public void targetSelector()             // Ручной выбор типа цели
+    public void targetManualSelector()             // Ручной выбор типа цели
     {
         System.out.println("Повітряна ціль - ЛІТАК:..................натисни ..'1'");
         System.out.println("Повітряна ціль - ГЕЛІКОПТЕР:.............натисни ..'2'");
@@ -148,7 +156,40 @@ public class Aircraft {
             default:
 
                 System.out.println("Зробіть вибір!");
-                targetSelector();
+                targetManualSelector();
+        }
+    }
+// Диалог подтверждения данных о цели, которые сгенерировались
+    public void confirmSelect(){
+
+    System.out.println("Підтверджуєте тип цілі???  Y/N?");
+    String select = scanner.nextLine();
+                switch (select){
+        case "N":
+            System.out.println("Ручний вибір цілі: ");
+            targetManualSelector();
+        case "n":
+            System.out.println("Ручний вибір цілі: ");
+            targetManualSelector();
+        default:
+            System.out.print("ОК!  Вибрана ціль: ");
+            exitConfirmSelect();
+            airMonitorData();
+       }
+
+    }
+    public void exitConfirmSelect(){
+        if (aircraft==true) {
+            System.out.println(" ЛІТАК! ");
+        } else if (helix==true) {
+            System.out.println(" ГЕЛІКОПТЕР! ");
+        } else if (wingm==true) {
+            System.out.println(" КРИЛАТА РАЕКТА! ");
+        } else if (bpla==true) {
+            System.out.println(" БПЛА! ");
+        }
+        else {
+            System.out.println("БАЛЛІСТИЧНА РАКЕТА!");
         }
 
     }

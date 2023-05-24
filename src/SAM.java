@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 // В этом классе будут описаны объекты ПВО
@@ -17,6 +19,9 @@ public class SAM {
     }
 
     Scanner scanner= new Scanner(System.in);
+
+
+
 
 
 
