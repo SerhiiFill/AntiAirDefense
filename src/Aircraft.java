@@ -18,9 +18,9 @@ public class Aircraft {
 
     public Aircraft()   // генерируем и иниализируем случайные значения для полей класса при вызове конструктора
     {
-       int i1 = random.nextInt(10000);
-       speed=i1+90;
-
+        // int i1 = random.nextInt(10000);
+       //speed=i1+90;
+        speed=940;
        // С этого места генерируется высота в зависимости от диапазона скорости
 
         if (speed>=3501)
@@ -41,7 +41,7 @@ public class Aircraft {
             else {
             System.out.println("Ціль - БАЛЛІСТИЧНА РАКЕТА!");
 
-        }// здесь сделано так, чтобы не генерировалась высота равная 0 км
+        }                                 // здесь сделано так, чтобы не генерировалась высота равная 0 км
 
 
         int s2 = random.nextInt(90);
@@ -50,19 +50,26 @@ public class Aircraft {
         azimuth =a2;
 
     }
-    // метод, описывающий логику определения типа цели
+                                                 // метод, описывающий логику определения типа цели
     public void printTargetType()
         {
         if (speed>=900 && speed<=3500)
             {
-           // здесь писать диалог выбора при помощи сканера
+                                             // здесь писать диалог выбора при помощи сканера
             System.out.println("Ціль - ЛІТАК");
                 System.out.println("Підтверджуєте тип цілі???  Y/N?");
                 String select = scanner.nextLine();
-                if (select=="n"){
-                    System.out.println("Виберіть самостійно тип цілі : ");
-                } else
-                    aircraft = true;
+                switch (select){
+                    case "N":
+                        System.out.println("Ручний вибір цілі: ");
+                        targetSelector();
+                    case "n":
+                        System.out.println("Ручний вибір цілі: ");
+                        targetSelector();
+                    default:
+                        System.out.println("ОК!!  ПОВІТРЯНА ЦІЛЬ - ЛІТАК!");
+                        aircraft=true;
+                }
             }
         else if (speed>=181 && speed<=280)
             {
@@ -96,14 +103,7 @@ public class Aircraft {
         }
     }
 
-    // Метод описывающий подтверждение типа цели и логику выбора средств поражения
-
-    public void targetSelector()
-    {
-
-    }
-
-    // вывод тревожных сообщений
+       // вывод тревожных сообщений
     public void displayWarning()
     {
         System.out.println("УВАГА! ПОВІТРЯНА ЦІЛЬ!");
@@ -119,6 +119,41 @@ public class Aircraft {
         System.out.println("Дистанція  : " + range + "    КМ");
         System.out.println("Азімут     : "   + alt + "    ГРАД");
     }
+    public void targetSelector()             // Ручной выбор типа цели
+    {
+        System.out.println("Повітряна ціль - ЛІТАК:..................натисни ..'1'");
+        System.out.println("Повітряна ціль - ГЕЛІКОПТЕР:.............натисни ..'2'");
+        System.out.println("Повітряна ціль - КРИЛАТА РАКЕТА:.........натисни ..'3'");
+        System.out.println("Повітряна ціль - БПЛА:...................натисни ..'4'");
+        System.out.println("Повітряна ціль - БАЛЛІСТИЧНА РАКЕТА:.....натисни ..'5'");
+
+        String select = scanner.nextLine();
+        switch (select) {
+            case "1":
+                System.out.println("ОК! ----Ручний вибір цілі:------ ЛІТАК! ");
+                aircraft = true;
+            case "2":
+                System.out.println("ОК! ----Ручний вибір цілі:---ГЕЛІКОПТЕР! ");
+                helix=true;
+            case "3":
+                System.out.println("ОК! ----Ручний вибір цілі:--КРИЛАТА РАКЕТА");
+                wingm=true;
+            case "4":
+                System.out.println("ОК! ----Ручний вибір цілі:---БПЛА! ");
+                bpla=true;
+            case "5":
+                System.out.println("ОК! ----Ручний вибір цілі:---БАЛЛІСТИЧНА РАКЕТА ");
+                mbr=true;
+
+            default:
+
+                System.out.println("Зробіть вибір!");
+                targetSelector();
+        }
+
+    }
+
+    // Гетеры и сетеры
 
     public boolean isAircraft() {
         return aircraft;
@@ -158,5 +193,13 @@ public class Aircraft {
 
     public void setMbr(boolean mbr) {
         this.mbr = mbr;
+    }
+
+    public Random getRandom() {
+        return random;
+    }
+
+    public void setRandom(Random random) {
+        this.random = random;
     }
 }
