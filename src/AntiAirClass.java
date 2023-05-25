@@ -47,34 +47,35 @@ public class AntiAirClass {
         String select = scanner.nextLine();
         switch (select) {
             case "1":
-                System.out.println("--------------------------------- ");
+                AntiAirDefence.patriot();
                 System.out.println("Вибрано Patriot ");
 
-                Map<String, Integer> samData=new LinkedHashMap<>();
+                Map<String, Integer> patriotData=new LinkedHashMap<>();
 
-                samData.put("Дальність ураження :",range);
-                samData.put("Максимальна висота ураження :",altmax);
-                samData.put("Боєкомлект",ammo);
+                patriotData.put("Дальність ураження :",range);
+                patriotData.put("Максимальна висота ураження :",altmax);
+                patriotData.put("Боєкомлект",ammo);
 
-                for (Map.Entry<String,Integer> item: samData.entrySet())
+                for (Map.Entry<String,Integer> item: patriotData.entrySet())
                 {
                     System.out.println(item.getKey() + " " + item.getValue());
                 }
-                System.out.println("??ПУСК??........ Y/N" );
                 launch();
                 break;
 
+
             case "2":
                 System.out.println("--------------------------------- ");
-                System.out.println("Вибрано Patriot ");
+                AntiAirDefence.irisT();
+                System.out.println("Вибрано Iris-T ");
 
-                Map<String, Integer> samData=new LinkedHashMap<>();
+                Map<String, Integer> irisData=new LinkedHashMap<>();
 
-                samData.put("Дальність ураження :",range);
-                samData.put("Максимальна висота ураження :",altmax);
-                samData.put("Боєкомлект",ammo);
+                irisData.put("Дальність ураження :",range);
+                irisData.put("Максимальна висота ураження :",altmax);
+                irisData.put("Боєкомлект",ammo);
 
-                for (Map.Entry<String,Integer> item: samData.entrySet())
+                for (Map.Entry<String,Integer> item: irisData.entrySet())
                 {
                     System.out.println(item.getKey() + " " + item.getValue());
                 }
@@ -97,7 +98,9 @@ public class AntiAirClass {
     }
     public void launch()
     {
+        System.out.println("??ПУСК??........ Y/N" );
         String select = scanner.nextLine();
+
         switch (select)
         {
             case "Y":

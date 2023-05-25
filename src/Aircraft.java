@@ -94,7 +94,7 @@ public class Aircraft {
         }
     }
 
-    // Создание хешмэпа в котором зафиксированы поля класса
+    // Создание хешмэпа в котором зафиксированы поля класса ( параметры цели )
     public void airMonitorData(){
 
         Map<String, Integer> airData=new LinkedHashMap<>();

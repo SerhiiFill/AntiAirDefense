@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Дописано подтверждение цели после генератора. Остальное в редми">
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Начал писать работу класса AntiAirClass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Readmi" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,11 @@
       <workItem from="1684763227330" duration="58000" />
       <workItem from="1684923177906" duration="4803000" />
       <workItem from="1684943826504" duration="10838000" />
-      <workItem from="1684994966949" duration="3888000" />
+      <workItem from="1684994966949" duration="3961000" />
+      <workItem from="1685003155746" duration="1783000" />
+      <workItem from="1685028045442" duration="824000" />
+      <workItem from="1685029463646" duration="146000" />
+      <workItem from="1685030994241" duration="737000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684954913429</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Начал писать работу класса AntiAirClass">
+      <created>1684999999464</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684999999464</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +169,7 @@
     <MESSAGE value="исправлено модифиакторы доступа&#10;добавлены else&#10;начал писать диалог выбора цели" />
     <MESSAGE value="Работа с методами printTargetType&#10;и targetSelector" />
     <MESSAGE value="Дописано подтверждение цели после генератора. Остальное в редми" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дописано подтверждение цели после генератора. Остальное в редми" />
+    <MESSAGE value="Начал писать работу класса AntiAirClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начал писать работу класса AntiAirClass" />
   </component>
 </project>

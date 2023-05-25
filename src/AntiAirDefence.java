@@ -5,15 +5,17 @@ public class AntiAirDefence {
         Aircraft aircraft = new Aircraft();
 
 
-        AntiAirClass Patriot = new AntiAirClass("Patriot", 185,55,6);
-        AntiAirClass IrisT = new AntiAirClass("IrisT",100,35,16);
+    //    AntiAirClass Patriot = new AntiAirClass("Patriot", 185,55,6);
+    //    AntiAirClass IrisT = new AntiAirClass("IrisT",100,35,16);
         AntiAirClass Nasams = new AntiAirClass("Nasams", 80,25,8);
         AntiAirClass Hawk = new AntiAirClass("Hawk", 20,8,8);
         AntiAirClass Stinger = new AntiAirClass("Stinger", 5,3,999);
 
         aircraft.displayWarning();
         aircraft.printTargetType();
-        Patriot.selectSAM();
+
+
+        //Patriot.selectSAM();
 
         /*
         // это проверка работы разного
@@ -33,5 +35,13 @@ public class AntiAirDefence {
         System.out.println(Stinger);
 
         */
+   }
+   public static void patriot()
+   {
+       AntiAirClass Patriot = new AntiAirClass("Patriot", 185,55,6);
+   }
+   public static void irisT ()
+   {
+       AntiAirClass IrisT = new AntiAirClass("IrisT",100,35,16);
    }
 }
