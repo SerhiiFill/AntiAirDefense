@@ -1,8 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.Scanner;
-
+import java.util.*;
 public class Aircraft {
 
     private int speed;
@@ -101,7 +97,7 @@ public class Aircraft {
     // Создание хешмэпа в котором зафиксированы поля класса
     public void airMonitorData(){
 
-        Map<String, Integer> airData=new HashMap<>();
+        Map<String, Integer> airData=new LinkedHashMap<>();
         airData.put("Швидкість:",speed);
         airData.put("Висота",alt);
         airData.put("Дистанція",range);
@@ -140,6 +136,7 @@ public class Aircraft {
             case "1":
                 System.out.println("ОК! ----Ручний вибір цілі:------ ЛІТАК! ");
                 aircraft = true;
+
             case "2":
                 System.out.println("ОК! ----Ручний вибір цілі:---ГЕЛІКОПТЕР! ");
                 helix=true;

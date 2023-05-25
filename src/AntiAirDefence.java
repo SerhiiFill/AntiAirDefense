@@ -4,14 +4,17 @@ public class AntiAirDefence {
 
         Aircraft aircraft = new Aircraft();
 
-        SAM Patriot = new SAM("Patriot", 185,55,6);
-        SAM IrisT = new SAM("IrisT",100,35,16);
-        SAM Nasams = new SAM("Nasams", 80,25,8);
-        SAM Hawk = new SAM("Hawk", 20,8,8);
-        SAM Stinger = new SAM("Stinger", 5,3,999);
+
+        AntiAirClass Patriot = new AntiAirClass("Patriot", 185,55,6);
+        AntiAirClass IrisT = new AntiAirClass("IrisT",100,35,16);
+        AntiAirClass Nasams = new AntiAirClass("Nasams", 80,25,8);
+        AntiAirClass Hawk = new AntiAirClass("Hawk", 20,8,8);
+        AntiAirClass Stinger = new AntiAirClass("Stinger", 5,3,999);
 
         aircraft.displayWarning();
         aircraft.printTargetType();
+        Patriot.selectSAM();
+
         /*
         // это проверка работы разного
         System.out.println();
