@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Начал писать работу класса AntiAirClass">
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="решаю задачу по фиксации значений полей цели после подтверждения ее выбора">
+      <change afterPath="$PROJECT_DIR$/src/AAEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AntiAirMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PatriotSAM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/AntiAirFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/IrisTSAM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AntiAirClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirDefence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Readmi" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/IRadar.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +47,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="AntiAirDefence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AntiAirDefence" />
+    <configuration name="AntiAirMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AntiAirMain" />
       <module name="AntiAirDefense" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -50,7 +56,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AntiAirDefence" />
+        <item itemvalue="Application.AntiAirMain" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +92,12 @@
       <workItem from="1685003155746" duration="1783000" />
       <workItem from="1685028045442" duration="824000" />
       <workItem from="1685029463646" duration="146000" />
-      <workItem from="1685030994241" duration="737000" />
+      <workItem from="1685030994241" duration="2307000" />
+      <workItem from="1685062702269" duration="6146000" />
+      <workItem from="1685077697869" duration="7049000" />
+      <workItem from="1685117321310" duration="3997000" />
+      <workItem from="1685126671376" duration="525000" />
+      <workItem from="1685257643888" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -144,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684999999464</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="решаю задачу по фиксации значений полей цели после подтверждения ее выбора">
+      <created>1685036404300</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685036404300</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +188,7 @@
     <MESSAGE value="Работа с методами printTargetType&#10;и targetSelector" />
     <MESSAGE value="Дописано подтверждение цели после генератора. Остальное в редми" />
     <MESSAGE value="Начал писать работу класса AntiAirClass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начал писать работу класса AntiAirClass" />
+    <MESSAGE value="решаю задачу по фиксации значений полей цели после подтверждения ее выбора" />
+    <option name="LAST_COMMIT_MESSAGE" value="решаю задачу по фиксации значений полей цели после подтверждения ее выбора" />
   </component>
 </project>
