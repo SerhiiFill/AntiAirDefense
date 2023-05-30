@@ -1,5 +1,14 @@
 package Service;
 
 public interface AntiAirFactory {
-    public void GenObject ();
+    void GenObject ();
+    void launchMissile();
+
+  //  void targetHit();
+
+  //  void randomHit();
+
+     void pause ();
+
+
 }

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="решаю задачу по фиксации значений полей цели после подтверждения ее выбора">
-      <change afterPath="$PROJECT_DIR$/src/AAEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AntiAirMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PatriotSAM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/AntiAirFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/IrisTSAM.java" afterDir="false" />
+    <list default="true" id="65cf1b1b-6719-4421-9335-33a0d1e1141b" name="Changes" comment="Начал переделку всего по шаблону FACTORY: создаю новые сущности сисем ПВО">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AntiAirClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AntiAirDefence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AAEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AAEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AntiAirMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AntiAirMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PatriotSAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PatriotSAM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Readmi" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/IRadar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/AntiAirFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AntiAirFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/IrisTSAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/IrisTSAM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,12 @@
       <workItem from="1685077697869" duration="7049000" />
       <workItem from="1685117321310" duration="3997000" />
       <workItem from="1685126671376" duration="525000" />
-      <workItem from="1685257643888" duration="9936000" />
+      <workItem from="1685257643888" duration="13379000" />
+      <workItem from="1685296970536" duration="3280000" />
+      <workItem from="1685373498703" duration="9198000" />
+      <workItem from="1685389698112" duration="262000" />
+      <workItem from="1685389972611" duration="4149000" />
+      <workItem from="1685446986741" duration="3911000" />
     </task>
     <task id="LOCAL-00001" summary="Первая заливка">
       <created>1684168847324</created>
@@ -162,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685036404300</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Начал переделку всего по шаблону FACTORY: создаю новые сущности сисем ПВО">
+      <created>1685271567210</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685271567210</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +198,7 @@
     <MESSAGE value="Дописано подтверждение цели после генератора. Остальное в редми" />
     <MESSAGE value="Начал писать работу класса AntiAirClass" />
     <MESSAGE value="решаю задачу по фиксации значений полей цели после подтверждения ее выбора" />
-    <option name="LAST_COMMIT_MESSAGE" value="решаю задачу по фиксации значений полей цели после подтверждения ее выбора" />
+    <MESSAGE value="Начал переделку всего по шаблону FACTORY: создаю новые сущности сисем ПВО" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начал переделку всего по шаблону FACTORY: создаю новые сущности сисем ПВО" />
   </component>
 </project>

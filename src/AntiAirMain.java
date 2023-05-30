@@ -6,14 +6,23 @@ import java.util.Scanner;
 public class AntiAirMain {
     public static void main(String[] args) {
 
-       AntiAirFactory antiAirFactory = createSAM("2");
+       AAEngine aaEngine = new AAEngine(0,0,0,0);
 
-      System.out.println(antiAirFactory);
+        aaEngine.displayWarning();
+        aaEngine.targetId();
+       AntiAirFactory antiAirFactory = createSAM("");
+        antiAirFactory.GenObject();
+        antiAirFactory.launchMissile();
+
+
+
 
     }
 
+// ---------- Метод создающий новую сущность после выбора ---------------
     public static AntiAirFactory createSAM(String select) {
         Scanner scanner= new Scanner(System.in);
+        System.out.println(" ");
         System.out.println("ОБЕРІТЬ ЗАСІБ УРАЖЕННЯ :");
         System.out.println("1...........PATRIOT");
         System.out.println("2...........IRIS-T");
@@ -27,7 +36,7 @@ public class AntiAirMain {
             System.out.println("Ціль наближається!!!");
             createSAM(select);
         }
-        return null;
+        return createSAM("");
     }
 
 }
