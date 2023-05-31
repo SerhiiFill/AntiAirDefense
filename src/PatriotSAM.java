@@ -9,6 +9,8 @@ public class PatriotSAM implements AntiAirFactory {
     private int hitTarget; // процент верояности попадания по конекретному типу цели
     private int ammo;
     private boolean kill;
+
+
     public PatriotSAM ( int ammo)
     {
         this.ammo=ammo;
@@ -19,53 +21,64 @@ public class PatriotSAM implements AntiAirFactory {
     Scanner scanner=new Scanner(System.in);
 
 
-
     @Override
     public void GenObject() {
         System.out.println("Обрано ЗРК Patriot : " + "Боєкомлект: " + ammo +" ракет. Вірогідність ураження : " +hitTarget+"0%");
+        System.out.println(" ");
+        if (ammo>0)
+        {
+        launchMissile();
+        }
+        else {
+            System.out.println("Закінчилсь ракети! ");
+            AntiAirMain.createSAM("");
+        }
     }
 
     @Override
     public void launchMissile()
-    {
-        System.out.println("     ПУСК?      Y/N? ");
+    {   System.out.println("     ПУСК?      Y/N? ");
         String select=scanner.nextLine();
         if (select.equalsIgnoreCase("Y") && select.equalsIgnoreCase("y")){
             System.out.println("Ракета пішла!");
-            ammo=ammo-1;
+            flyMissile();
             setKill();
-            System.out.println(kill);
-
 
         } else {
             System.out.println("ЧТо-то пошло не так!");
         }
     }
 
+
     // --------------  цей метод дає вірогідность ураження в залежності від типу цілі ----------------------
     public int targetHit ()
     {
         if (AAEngine.air=true) {
-            hitTarget=50;
+            hitTarget=10;
         } else {
             System.out.println("ERROR!!");
         }
         return hitTarget;
     }
 
+    //  --------------------------- Цей метод розраховує ураження чи промах  -------------------
     public boolean setKill (){
-        int i=random.nextInt(10);
-        System.out.println("KILL "+i);
-        System.out.println("Hit = "+hitTarget);
-        if (i<=hitTarget) {
-            kill=true;
-        }
-        else {
-            kill=false;
-        }
+            ammo=ammo-1;
+            int i=random.nextInt(10);
+                 if (i<=hitTarget) {
+                  kill=true;
+                     System.out.println("Ціль уражено!");
+                     pause();
+                     System.out.println("Залишок боєкомплекту:  "+ammo);
+                      }
+                 else {
+                         kill=false;
+                        System.out.println("    Промах!");
+                        pause();
+                        System.out.println("Залишок боєкомплекту:  "+ammo);
+                        GenObject();}
         return kill;
     }
-//  --------------------------- Цей метод розраховує ураження чи промах  -------------------
 
     public void pause () {
         try {
@@ -75,6 +88,23 @@ public class PatriotSAM implements AntiAirFactory {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public void flyMissile() {
+        int r=random.nextInt(30);
+        for(int i = 0; i < r; i++) {
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+
+                throw new RuntimeException(e);
+            }
+
+            System.out.print(" * ");
+        }
+
+    }
+
 }
 
 

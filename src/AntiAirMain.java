@@ -10,9 +10,8 @@ public class AntiAirMain {
 
         aaEngine.displayWarning();
         aaEngine.targetId();
-       AntiAirFactory antiAirFactory = createSAM("");
+        AntiAirFactory antiAirFactory = createSAM("");
         antiAirFactory.GenObject();
-        antiAirFactory.launchMissile();
 
 
 
@@ -24,12 +23,12 @@ public class AntiAirMain {
         Scanner scanner= new Scanner(System.in);
         System.out.println(" ");
         System.out.println("ОБЕРІТЬ ЗАСІБ УРАЖЕННЯ :");
-        System.out.println("1...........PATRIOT");
-        System.out.println("2...........IRIS-T");
+        System.out.println("PATRIOT              1:");
+        System.out.println("IRIS-T               2:");
         select = scanner.nextLine();
 
         if (select.equalsIgnoreCase("1")) {
-            return new PatriotSAM(6);
+            return new PatriotSAM(2);
         } else if (select.equalsIgnoreCase("2")) {
             return new IrisTSAM(8);
         } else {
