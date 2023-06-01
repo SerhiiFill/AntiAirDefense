@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class PatriotSAM implements AntiAirFactory {
 
     private int hitTarget; // процент верояности попадания по конекретному типу цели
-    static int ammo;
+    private int ammo;
     private boolean kill;
 
 
@@ -26,10 +26,8 @@ public class PatriotSAM implements AntiAirFactory {
         System.out.println(" ");
         if (ammo > 0) {
             launchMissile();
-            AntiAirMain.createSAM("");
         } else {
             System.out.println("Закінчилсь ракети! ");
-            AntiAirMain.createSAM("");
         }
     }
 
@@ -43,7 +41,8 @@ public class PatriotSAM implements AntiAirFactory {
             setKill();
 
         } else {
-            System.out.println("ЧТо-то пошло не так!");
+            flyTarget();
+            AntiAirMain.createSAM("");
         }
     }
 
@@ -63,6 +62,31 @@ public class PatriotSAM implements AntiAirFactory {
 
     }
 
+    @Override
+    public void flyTarget() {
+        int r = random.nextInt(7);
+        for (int i = 0; i < r; i++) {
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+
+                throw new RuntimeException(e);
+            }
+
+            System.out.print(" * Ціль наближається! ");
+        }
+            System.out.println(" ");
+    }
+
+    @Override
+    public void setAmmo(int ammo) {
+        System.out.println(ammo);
+    }
+
+    @Override
+    public void getAmmo() {
+        System.out.println(ammo);
+    }
 
 
     //  --------------------------- Цей метод розраховує ураження чи промах  -------------------
@@ -105,13 +129,7 @@ public class PatriotSAM implements AntiAirFactory {
 
 // ------------------ Далі, методи, які ще не дороблені
 
-    public int getAmmo() {
-        return ammo;
-    }
 
-    public void setAmmo(int ammo) {
-        this.ammo = ammo;
-    }
 }
 
 
