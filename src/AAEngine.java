@@ -22,7 +22,7 @@ public class AAEngine {
 
     // ---------------- инициализируем рандом и сканер ----------------------------
     Random random = new Random();
-    Scanner scanner = new Scanner(System.in);
+  //  Scanner scanner = new Scanner(System.in);
 
 
     // ------------------ ИНФОРМАЦИОННЫЕ И ДИАЛОГОВЫЕ ЭКРАНЫ -----------------------
@@ -87,7 +87,7 @@ public class AAEngine {
     }
 
 
-    public int setSpeed() {
+    public int setSpeed() { // Тимчасово швидкість фіксована для тестування роботи
         // int i1 = random.nextInt(2500);
         // speed=i1+899;
         speed = 950;
@@ -98,7 +98,6 @@ public class AAEngine {
     public int setRange() {
         int r2 = random.nextInt(90);
         range = r2 + 10;
-
         return r2;
     }
     // ----------- генерим азимут на цель -----------------------------------
