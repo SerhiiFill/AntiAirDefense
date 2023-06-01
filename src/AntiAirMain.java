@@ -8,14 +8,10 @@ public class AntiAirMain {
 
        AAEngine aaEngine = new AAEngine(0,0,0,0);
 
-        aaEngine.displayWarning();
-        aaEngine.targetId();
-
-        AntiAirFactory antiAirFactory = createSAM("");
-
-        antiAirFactory.genObject();
-
-
+        aaEngine.displayWarning(); // вывод тревожных сообщений
+        aaEngine.targetId(); // Распознавание цели
+        AntiAirFactory antiAirFactory = createSAM(""); // Выбираем ЗРК
+        antiAirFactory.genObject(); // Пуск, полет ракеты, попадание или промах, повторный выстрел при промахе
 
     }
 
@@ -26,6 +22,7 @@ public class AntiAirMain {
         System.out.println("ОБЕРІТЬ ЗАСІБ УРАЖЕННЯ : ");
         System.out.println("1          SAM  PATRIOT");
         System.out.println("2          SAM  IRIS-T");
+
         select = scanner.nextLine();
 
         if (select.equalsIgnoreCase("1")) {
@@ -36,9 +33,9 @@ public class AntiAirMain {
 
         } else {
             System.out.println("Ціль наближається!!!");
-            createSAM(select);
+
         }
-        return createSAM("");
+        return null;
     }
 
 }
