@@ -39,7 +39,7 @@ public class PatriotSAM implements AntiAirFactory {
     public void launchMissile()
     {   System.out.println("     ПУСК?      Y/N? ");
         String select=scanner.nextLine();
-        if (select.equalsIgnoreCase("Y") && select.equalsIgnoreCase("y")){
+        if (select.equalsIgnoreCase("Y")){
             System.out.println("Ракета пішла!");
             flyMissile();
             setKill();
@@ -47,6 +47,16 @@ public class PatriotSAM implements AntiAirFactory {
         } else {
             System.out.println("ЧТо-то пошло не так!");
         }
+    }
+
+    @Override
+    public void setAmmo(int ammo) {
+
+    }
+
+    @Override
+    public void getAmmo(int ammo) {
+        this.ammo=ammo;
     }
 
 
@@ -64,18 +74,18 @@ public class PatriotSAM implements AntiAirFactory {
     //  --------------------------- Цей метод розраховує ураження чи промах  -------------------
     public boolean setKill (){
             ammo=ammo-1;
-            int i=random.nextInt(10);
+            int i=random.nextInt(10);// тимчасово вірогіднсть зменшена до 10% щоб було простіше тестувати
                  if (i<=hitTarget) {
                   kill=true;
-                     System.out.println("Ціль уражено!");
+                     System.out.print("Ціль уражено!");
                      pause();
-                     System.out.println("Залишок боєкомплекту:  "+ammo);
+                     System.out.println("     Залишок боєкомплекту:  "+ammo);
                       }
                  else {
                          kill=false;
-                        System.out.println("    Промах!");
+                        System.out.print("    Промах!");
                         pause();
-                        System.out.println("Залишок боєкомплекту:  "+ammo);
+                        System.out.println("    Залишок боєкомплекту:  "+ammo);
                         GenObject();}
         return kill;
     }
@@ -91,7 +101,7 @@ public class PatriotSAM implements AntiAirFactory {
 
     @Override
     public void flyMissile() {
-        int r=random.nextInt(30);
+        int r=random.nextInt(20);
         for(int i = 0; i < r; i++) {
             try {
                 Thread.sleep(300);
@@ -100,10 +110,11 @@ public class PatriotSAM implements AntiAirFactory {
                 throw new RuntimeException(e);
             }
 
-            System.out.print(" * ");
+            System.out.print(" * " );
         }
 
     }
+
 
 }
 
